@@ -30,11 +30,15 @@ g++ -o main *.cpp *.h
 ./main
 ```
 
-* For CLion users: Click the Compile and Run button.
+* For CLion users: 1) Update the CMakeLists.txt file as below; and 2) Click the Compile and Run button.
+
+```
+add_executable(your_project_name main.cpp Cow.cpp Cow.h Sheep.cpp Sheep.h)
+```
 
 # Test
 
-Check the created result.txt file. It must be the same as the answer.txt file.
+Check the created result.txt file (for CLion users: this file is under the cmake-build-debug folder). It must be the same as the answer.txt file.
 
 # Submit
 
